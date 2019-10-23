@@ -8,7 +8,7 @@ Aplicativo para marcar os pontos no jogo de truco criado para disciplina de Prog
 Tutorial de criação deste app: http://bit.ly/2MDO6ww
 
 <p align="center">
-    <img src="https://miro.medium.com/max/1440/1*UhBQQqZamLVMRhYtkKnhpA.png" width="800"/>
+    <img src="https://i.ibb.co/0fss3z3/Whats-App-Image-2019-10-23-at-12-59-00.jpg" width="800"/>
 </p>
 
 ## Como clonar e importar
