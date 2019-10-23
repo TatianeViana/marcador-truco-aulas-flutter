@@ -169,6 +169,14 @@ class _HomePageState extends State<HomePage> {
 
             
 
+              if(player.score==11){
+                _showDialog(
+                   title:'Mão de ferro',
+                  )
+              }
+
+            
+
             if (player.score == 12) {
               _showDialog(
                   title: 'Fim do jogo',
