@@ -14,7 +14,6 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     _resetPlayers();
-    
   }
 
   void _resetPlayer({Player player, bool resetVictories = true}) {
@@ -138,10 +137,16 @@ class _HomePageState extends State<HomePage> {
           color: Colors.black.withOpacity(0.1),
           onTap: () {
             setState(() {
-              player.score--;
+              if (player.score > 0){
+               player.score--;
+              }
             });
           },
+        
         ),
+      
+        
+
         _buildRoundedButton(
           text: '+1',
           color: Colors.deepOrangeAccent,
@@ -149,6 +154,20 @@ class _HomePageState extends State<HomePage> {
             setState(() {
               player.score++;
             });
+            
+            //if(_playerOne.score == 12 || _playerTwo.score == 12)
+           
+            
+            
+
+
+            if(_playerOne.score == 11 && _playerTwo.score == 11)
+            _showDialogMF(
+              title: 'Mão de ferro',
+              message: 'ultima rodada'
+            );
+
+            
 
             if (player.score == 12) {
               _showDialog(
@@ -173,9 +192,39 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+
+
+  void _showDialogMF ({String title, String message, Function confirm}){
+    showDialog(
+      barrierDismissible: false,
+      context: context,
+      builder: (BuildContext context){
+        return AlertDialog(
+          title: Text(title),
+          content: Text(message),
+          actions: <Widget>[
+            FlatButton(
+              child: Text('OK'),
+              onPressed: (){
+                Navigator.of(context).pop();
+                if (confirm != null ) confirm();
+            
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+
+
+
+  
   void _showDialog(
       {String title, String message, Function confirm, Function cancel}) {
     showDialog(
+      barrierDismissible: false,
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
@@ -201,4 +250,8 @@ class _HomePageState extends State<HomePage> {
       },
     );
   }
+
+ 
+
+
 }
