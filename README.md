@@ -6,6 +6,7 @@ Desenvolvido por:
 - Tatiane Viana da Cruz RA 0040481821044
 - Leonardo Rodrigo Longo RA 0040481821022
 - Marcelo Menezes RA 0040481821025
+
 Tutorial de criação deste app: http://bit.ly/2MDO6ww
 
 <p align="center">
