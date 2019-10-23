@@ -2,13 +2,14 @@
 
 Aplicativo para marcar os pontos no jogo de truco criado para disciplina de Programação Mobile.
 
-    Desenvolvido por:
+Desenvolvido por:
 - Tatiane Viana da Cruz RA 0040481821044
-
+- Leonardo Rodrigo Longo RA 0040481821022
+- Marcelo Menezes RA 0040481821025
 Tutorial de criação deste app: http://bit.ly/2MDO6ww
 
 <p align="center">
-    <img src="https://i.ibb.co/0fss3z3/Whats-App-Image-2019-10-23-at-12-59-00.jpg" width="800"/>
+    <img src="https://i.ibb.co/f1vX0WL/Whats-App-Image-2019-10-23-at-16-52-46.jpg" width="800"/>
 </p>
 
 ## Como clonar e importar
@@ -20,9 +21,9 @@ Tutorial de criação deste app: http://bit.ly/2MDO6ww
 ## Desafios
 
 - [X] Não deixar que seja possível ficar com pontos negativos ao clicar em (-1) e também não pode ultrapassar 12 pontos.
-- Permitir de alguma forma que a partida seja reiniciada, sem zerar o número de vitórias
+- [x] Permitir de alguma forma que a partida seja reiniciada, sem zerar o número de vitórias
 - [x] Transformar o AlertDialog em modal para que somente desapareça da tela ao clicar em CANCEL ou OK. Uma dia, precisa utilizar o atributo barrierDismissible
-- Trocar os nomes dos usuários ao clicar em cima do nome (Text). Pode-se utilizar um GestureDetector e exibir um AlertDialog com um TextField. [Exemplo de AlertDialog com TextField](https://inducesmile.com/google-flutter/how-to-add-textfield-input-in-an-alert-dialog-in-flutter/).
+- [x] Trocar os nomes dos usuários ao clicar em cima do nome (Text). Pode-se utilizar um GestureDetector e exibir um AlertDialog com um TextField. [Exemplo de AlertDialog com TextField](https://inducesmile.com/google-flutter/how-to-add-textfield-input-in-an-alert-dialog-in-flutter/).
 - [x] Exibir uma notificação da mão de ferro: é a Mão de Onze especial, quando as duas duplas conseguem chegar a 11 pontos na partida. Todos os jogadores recebem as cartas “cobertas”, isto é, viradas para baixo, e deverão jogar assim. Quem vencer a mão, vence a partida
 - [x] Instale o plugin [Screen](https://pub.dev/packages/screen#-readme-tab-) e adicione um código para deixar a tela sempre ativa enquanto joga.
 
